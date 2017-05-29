@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.antariksh.creditcardhelper.MainActivity">
+
+            <LinearLayout
+                android:id="@+id/firstSubLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/firstTextViw"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="Enter Card Balance ($)"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/firstEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:background="@drawable/editstyle"
+                    android:inputType="numberSigned|numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondSubLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/secondTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="Enter Yearly Interest Rate (%)"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"/>
+
+                <EditText
+                    android:id="@+id/secondEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:background="@drawable/editstyle"
+                    android:inputType="numberDecimal|numberSigned"/>
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdSubLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/thirdTextView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="Enter Minimum Payment ($)"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/thirdEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:background="@drawable/editstyle"
+            android:inputType="numberDecimal|numberSigned"/>
+
+    </LinearLayout>
+
+    <!-- layout_marginTop is used for the space -->
+
+    <LinearLayout
+        android:id="@+id/fourthSubLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/fourthTextView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="Final Card Balance ($)"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/fourthEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:background="@drawable/editstyle"
+            android:inputType="numberDecimal|numberSigned"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifthSubLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fifthTextView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="Months Remaining"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/fifthEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:background="@drawable/editstyle"
+            android:inputType="numberDecimal|numberSigned"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixthSubLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sixthTextView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="Interest Paid Will Be ($)"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/sixthEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:background="@drawable/editstyle"
+            android:inputType="numberDecimal|numberSigned"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="COMPUTE"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="CLEAR"
+        android:textSize="15sp" />
+
+</LinearLayout>
